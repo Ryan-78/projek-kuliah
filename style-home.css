@@ -1,0 +1,310 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #5A0C0C;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: rgb(255, 204, 64);
+}
+
+.container {
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+
+header .container {
+    display: flex;
+    text-align: center;
+}
+
+.main-nav .container{
+    text-align: right;
+}
+
+.container img {
+    height: 70px;
+}
+
+
+.main-nav ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 40px;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+    border-bottom: solid #ffffff 3px;
+    padding-bottom: 4px;
+}
+
+.bg-kotak {
+    margin-top: 50px;
+    margin-left: 60px;
+    background-color:#5A0C0C;
+    height: 500px;
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+.bg {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%px;
+}
+
+.deskripsi > p {
+    color: white;
+}
+
+.deskripsi > h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.deskripsi > span {
+    color: rgb(255, 204, 64);
+}
+
+.deskripsi > button {
+    margin-top: 80px;
+    
+}
+
+
+.gambar > img {
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 10px;
+    background-color:rgb(255, 204, 64);
+    border-radius: 5px;
+    width: 200px;
+    width: 80px;
+    border: none;
+    transition: 0.5s;
+    padding: 14px 72px;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px #ffffff;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title > p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.main-content2 {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.card-best {
+    background-color: #8e1717;
+    height: 300px;
+    width: 200px ;
+    border-radius: 8px;
+
+}
+
+.card-best > h5 {
+    margin-top: 10px;
+    color: white;
+    margin-left: 40px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-best > p {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.card-best > img {
+    border-radius: 3px;
+}
+
+.card {
+    background-color: #8e1717;
+    height: 250px;
+    width: 200px ;
+    border-radius: 8px;
+}
+
+.card > img {
+    border-radius: 3px;
+}
+
+.card > h5 {
+    margin-top: 10px;
+    color: white;
+    margin-left: 40px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card > p {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 0.5rem;
+}
+
+.favorite {
+    background-color: rgb(255, 212, 59);
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    margin-top: 150px;
+    width: 100vw;
+    height: 200px;
+    background-color: #5A0C0C;
+    color: white;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+
+}
+
+.container-footer > img {
+    height: 70px;
+}
+
+.sitemap > h2 {
+    margin-bottom: 20px;
+}
+
+
+.sitemap > ul > li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.sitemap > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(206, 203, 203);
+}
+
+.sitemap > ul > li > a:hover {
+    color: white;
+}
+
+.medsos {
+    margin-bottom: 50px;
+}
+
+.wa {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nama-wa > a {
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+    margin-left: 10px;
+}
+
+.nama-wa > a:hover {
+    color: white;
+}
+
+.ig {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nama-ig > a {
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+    margin-left: 4px;
+}
+
+.nama-ig > a:hover {
+    color: white;
+
+}
+
+.title {
+    margin-top: 100px;
+    background-color: #8e1717;
+    padding: 10px;
+}

@@ -1,0 +1,189 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #5A0C0C;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: rgb(255, 204, 64);
+}
+
+.container {
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+
+header .container {
+    display: flex;
+    text-align: center;
+}
+
+.main-nav .container{
+    text-align: right;
+}
+
+.container img {
+    height: 70px;
+}
+
+.main-nav ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+    border-bottom: solid #ffffff 3px;
+    padding-bottom: 4px;
+}
+
+.bg {
+    margin-left: 165px;
+    margin-bottom: 90px;
+    background-color: #8e1717;
+    height: 220px;
+    width: 900px;
+    border-radius: 20px;
+
+}
+
+.kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.paragraft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.paragraft > p {
+    text-align: center;
+}
+
+.kotak {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 45px;
+    margin-top: 50px;
+
+}
+
+.wa {
+    background-image: url('bg-wa (2).png');
+    background-size: cover;
+    background-position: center;
+    background-color: #5A0C0C;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.ig {
+  background-image: url('bg-ig2.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #5A0C0C;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+    
+    
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.nama-app {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.logo-kecil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 15px;
+}
+
+.nama-ig {
+    font-size: 13px;
+}
+
+.deskripsi {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.nama-alamat {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.nama-alamat > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.location {
+    background-image: url('bg-location.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+

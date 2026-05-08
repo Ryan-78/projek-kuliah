@@ -1,0 +1,166 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #5A0C0C;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: rgb(255, 204, 64);
+}
+
+.container {
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+
+.container {
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+
+header .container {
+    display: flex;
+    text-align: center;
+}
+
+.main-nav .container{
+    text-align: right;
+}
+
+.container img {
+    height: 70px;
+}
+
+.main-nav ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+    border-bottom: solid #ffffff 3px;
+    padding-bottom: 4px;
+}
+
+
+
+.nama-atas > h4 {
+    text-align: center;
+    color: rgb(255, 204, 64);
+}
+
+.nama-atas > h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.nama-atas > p {
+    text-align: center;
+}
+
+.kotak {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.minuman {
+    background-color: #8e1717;
+    height: 250px;
+    width: 200px ;
+    border-radius: 8px;
+}
+
+.minuman > img {
+    border-radius: 3px;
+}
+
+.minuman > h5 {
+    margin-top: 10px;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.minuman > p {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.harga-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.harga-btn > h6 {
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+    
+}
+
+.btn {
+    margin-right: 10px;
+    white-space: 500px;
+    color: white;
+    background-color: #5A0C0C;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 80px;
+    border: none;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px #ffffff;
+}
+
+footer {
+    background-color: rgb(39, 6, 6);
+}
+
+.brand-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    padding: 10px;
+}
