@@ -104,7 +104,7 @@ header .container {
 }
 
 .wa {
-    background-image: url('bg-wa (2).png');
+    background-image: url('gambar/bg-wa\ \(2\).png');
     background-size: cover;
     background-position: center;
     background-color: #5A0C0C;
@@ -115,7 +115,7 @@ header .container {
 }
 
 .ig {
-  background-image: url('bg-ig2.png');
+  background-image: url('gambar/bg-ig2.png');
   background-size: cover;
   background-position: center;
   background-color: #5A0C0C;
@@ -176,7 +176,7 @@ header .container {
 }
 
 .location {
-    background-image: url('bg-location.jpeg');
+    background-image: url('gambar/bg-location.jpeg');
     background-size: cover;
     background-position: center;
     opacity: 100%;
