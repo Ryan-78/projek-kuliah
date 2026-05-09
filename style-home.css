@@ -308,3 +308,85 @@ footer {
     background-color: #8e1717;
     padding: 10px;
 }
+
+
+
+.icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon_x {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    transition: 0.3s;
+    margin-right: 30px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #731010;
+    transition: 0.4s;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 25px;
+}
+
+
+
+
+.sidebar.active {
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        margin-right: 20px;
+        font-size: 40px;
+        transition: 0.3s;
+    }
+
+    .icon:hover {
+        transform: scale(1.2);
+    }
+
+    .icon_x:hover {
+    transform: scale(1.2);
+
+}
+
+.sidebar ul li a {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+}
