@@ -101,6 +101,7 @@ header .container {
     margin-left: 45px;
     margin-top: 50px;
     gap: 20px;
+    padding: 20px;
     flex-wrap: wrap;
 
 }
