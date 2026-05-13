@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style-home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -41,7 +43,7 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 
-</div>
+    </div>
         </header>
 
         <section class="main-content">
@@ -68,46 +70,53 @@
 
         </div>
 
-        <section class="main-content2">
-
-            <div class="card">
+        <section class="main-content2 swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <div class="card swiper-slide">
                 <img src="gambar/minuman-1.jpeg" alt="minuman-1" width="100%" >
-                <h5>Matcha Cloud</h5>
+                <div class="card-info"><h5>Matcha Cloud</h5></div>
                 <p>Minuman matcha ringan dan creamy, <br> selembut awan dan bikin nagih.</p>
-
                 <div class="rating">
                     <i class="fa-solid fa-star" style="color: rgb(255, 212, 59); margin-top: 5px;"></i>
-                    <p style="color:white; font-size: 14px; margin-right: 0px; margin-top: 5px;">4.8 (100) <span class="favorite">Favorite</span></p>
+                    <p style="color:white; font-size: 14px; margin-top: 5px;">4.8 (100) <span class="favorite">Favorite</span></p>
                 </div>
-                
-                
-
             </div>
-            <div class="card">
-                <img src="gambar/minuman-2.jpeg" alt="minuman-1" width="100%" >
-                <h5>Matcha Cloud</h5>
+
+            <div class="card swiper-slide">
+                <img src="gambar/minuman-2.jpeg" alt="minuman-2" width="100%" >
+                <h5>Chocolate Chill</h5>
                 <p>Cokelat dingin: segar, manis dan pas saat cuaca panas.</p>
-
                 <div class="rating">
                     <i class="fa-solid fa-star" style="color: rgb(255, 212, 59); margin-top: 5px;"></i>
-                    <p style="color:white; font-size: 14px; margin-right: 0px; margin-top: 5px;">4.9 (150) <span class="favorite">Best Seller</span></p>
+                    <p style="color:white; font-size: 14px; margin-top: 5px;">4.9 (150) <span class="favorite">Best Seller</span></p>
                 </div>
-        
-
             </div>
-            <div class="card">
-                <img src="gambar/minuman-3.jpeg" alt="minuman-1" width="100%" >
-                <h5>Matcha Cloud</h5>
+
+            <div class="card swiper-slide">
+                <img src="gambar/minuman-3.jpeg" alt="minuman-3" width="100%" >
+                <h5>Boba Milk Tea</h5>
                 <p>Minuman susu teh yang lembut dengan boba kenyal yang memuaskan.</p>
-
-                 <div class="rating">
+                <div class="rating">
                     <i class="fa-solid fa-star" style="color: rgb(255, 212, 59); margin-top: 5px;"></i>
-                    <p style="color:white; font-size: 14px; margin-right: 0px; margin-top: 5px;">4.7 (98) <span class="favorite">Favorite</span></p>
+                    <p style="color:white; font-size: 14px; margin-top: 5px;">4.7 (98) <span class="favorite">Favorite</span></p>
                 </div>
-        
             </div>
 
-        </section>
+            <div class="card swiper-slide">
+                <img src="gambar/minuman-4.jpeg" alt="minuman-4" width="100%" >
+                <div class="card-info"><h5>Strawberry Splash</h5></div>
+                <p>Sensasi stroberi yang manis, <br> dingin, dan bikin nagih.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59); margin-top: 5px;"></i>
+                    <p style="color:white; font-size: 14px; margin-top: 5px;">4.7 (95) <span class="favorite">Favorite</span></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
 
 
         <footer>
@@ -144,8 +153,27 @@
                 </div> 
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <script src="main.js"></script>
-
+            <script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 10,         // Menampilkan kartu
+    spaceBetween: 20,        // Jarak antar kartu
+    loop: true,              // Bisa berputar terus
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // Responsif: 1 kartu di HP, 3 di Desktop
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      1024: { slidesPerView: 3, spaceBetween: 30 }
+    }
+  });
+</script>
 </body>
 </html>
