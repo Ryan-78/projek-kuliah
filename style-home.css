@@ -152,7 +152,7 @@ header .container {
 .main-content2 {
     width: 95%;
     margin: 50px auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px !important;
     position: relative;
     overflow: hidden;
 }
@@ -377,12 +377,13 @@ body {
     overflow-x: hidden;
 }
 .swiper-pagination {
-    bottom: 0px !important; /* Menurunkan titik ke bagian paling bawah container */
+    bottom: 50px !important;  /* Menurunkan titik ke bagian paling bawah container */
+    z-index: 10;
 }
 
 /* Mengatur tampilan titik agar lebih jelas dan berwarna kuning sesuai tema */
 .swiper-pagination-bullet {
-    background: #ccc; /* Warna titik saat tidak aktif */
+    background-color: white !important; /* Warna titik saat tidak aktif */
     opacity: 1;
 }
 
