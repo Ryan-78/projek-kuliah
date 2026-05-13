@@ -150,37 +150,9 @@ header .container {
 
 .main-content2 {
     display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
-    margin-top: 150px;
-}
-
-.card-best {
-    background-color: #8e1717;
-    height: 300px;
-    width: 200px ;
-    border-radius: 8px;
-
-}
-
-.card-best > h5 {
-    margin-top: 10px;
-    color: white;
-    margin-left: 40px;
-    font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.card-best > p {
-    color: white;
-    font-size: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    
-}
-
-.card-best > img {
-    border-radius: 3px;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .card {
@@ -229,7 +201,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center ;
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100vw;
     height: 200px;
     background-color: #5A0C0C;
@@ -392,4 +364,5 @@ footer {
 }
 body {
     background-color: #1f0505;
+    overflow-x: hidden;
 }
