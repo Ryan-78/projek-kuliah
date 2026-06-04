@@ -5,7 +5,7 @@ const iconX = document.querySelector(".icon_x");
 const sidebar = document.querySelector(".sidebar");
 
 // buka sidebar
-icon.addEventListener("click", () => {
+icon.addEventListener("click", () => { 
 
     sidebar.classList.add("active");
 
@@ -18,7 +18,7 @@ iconX.addEventListener("click", () => {
 
 });
 
-// ================= SWIPER =================
+// BAGIAN SWIPER
 
 var swiper = new Swiper(".mySwiper", {
 
@@ -59,15 +59,17 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-// Codingan bagian produk
-        const icon2 = document.querySelector(".icon");
-        const sidebar2 = document.querySelector(".sidebar");
-        const closeIcon = document.querySelector(".close-icon");
-        
-        icon2.addEventListener("click", () => {
-            sidebar2.classList.add("active");
-        });
 
-        closeIcon.addEventListener("click", () => {
-            sidebar2.classList.remove("active");
-        });
+
+// // Codingan bagian produk
+//         const icon2 = document.querySelector(".icon");
+//         const sidebar2 = document.querySelector(".sidebar");
+//         const closeIcon = document.querySelector(".close-icon");
+        
+//         icon2.addEventListener("click", () => {
+//             sidebar2.classList.add("active");
+//         });
+
+//         closeIcon.addEventListener("click", () => {
+//             sidebar2.classList.remove("active");
+//         });

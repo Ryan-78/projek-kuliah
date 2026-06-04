@@ -9,7 +9,10 @@ html {
 body {
     background-color: #1f0505;
     overflow-x: hidden;
+  
 }
+
+
 
 header {
     display: flex;
@@ -151,6 +154,7 @@ h2 span {
     flex-wrap: wrap;
 }
 
+
 .location,
 .wa,
 .ig {
@@ -264,7 +268,7 @@ h2 span {
         font-size: 22px;
     }
 
-    /* bg */
+
 
     .bg {
         width: 92%;
