@@ -1,3 +1,7 @@
+ <?php
+                        session_start();
+                        ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambadrink</title>
+    
+</nav>
     <link rel="stylesheet" href="style-home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,7 +32,16 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="produk.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+               
+
+                        <li>
+                        <?php if(isset($_SESSION['id'])): ?>
+                            <span><?php echo $_SESSION['nama']; ?></span>
+                        <?php else: ?>
+                            <a href="login.php">Login</a>
+                        <?php endif; ?>
+                        </li>
+                
             </ul>
             <i class="bi bi-list icon"></i>
         </nav>
@@ -38,7 +53,15 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="produk.html">Product</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.php">Login</a></li>
+           
+
+                        <li>
+                        <?php if(isset($_SESSION['id'])): ?>
+                            <span><?php echo $_SESSION['nama']; ?></span>
+                        <?php else: ?>
+                            <a href="login.php">Login</a>
+                        <?php endif; ?>
+                        </li>
 
         </ul>
     </div>
