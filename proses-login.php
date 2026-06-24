@@ -20,10 +20,17 @@ if (isset($_POST['login'])) {
             $_SESSION['nama'] = $user['nama'];
             $_SESSION['email'] = $user['email'];
 
-            header("Location: index.php");
-            exit;
+            if ($user['id'] == '12') {
+                header("Location: admin/adminproduk.php");
+                exit();
+            }
+            
 
-        } else {
+            header("Location: index.php");
+            exit();
+        }
+        
+        else {
 
             echo "<script>
                     alert('Password salah!');

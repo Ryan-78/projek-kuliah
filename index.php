@@ -1,6 +1,6 @@
- <?php
-                        session_start();
-                        ?>
+<?php
+    session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +12,13 @@
     <title>Ambadrink</title>
     
 </nav>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style-home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -30,17 +33,17 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="produk.html">Product</a></li>
-                <li><a href="contact.html">Contact</a></li>
-               
-
-                        <li>
-                        <?php if(isset($_SESSION['id'])): ?>
-                            <span><?php echo $_SESSION['nama']; ?></span>
-                        <?php else: ?>
-                            <a href="login.php">Login</a>
-                        <?php endif; ?>
-                        </li>
+                <li><a href="produk.php">Product</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li>
+                    <?php if(isset($_SESSION['id'])): ?>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                            Logout
+                        </a>
+                    <?php else: ?>
+                        <a href="login.php">Login</a>
+                    <?php endif; ?>
+                </li>
                 
             </ul>
             <i class="bi bi-list icon"></i>
@@ -51,18 +54,17 @@
         <i class="bi bi-x-lg icon_x"></i>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="produk.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           
-
+            <li><a href="produk.php">Product</a></li>
+            <li><a href="contact.php">Contact</a></li>
                         <li>
-                        <?php if(isset($_SESSION['id'])): ?>
-                            <span><?php echo $_SESSION['nama']; ?></span>
-                        <?php else: ?>
-                            <a href="login.php">Login</a>
-                        <?php endif; ?>
+                            <?php if(isset($_SESSION['id'])): ?>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                                    Logout
+                                </a>
+                            <?php else: ?>
+                                <a href="login.php">Login</a>
+                            <?php endif; ?>
                         </li>
-
         </ul>
     </div>
 
@@ -85,7 +87,7 @@
                     </p>
                     <div class="button">
                         <button class="btn">
-                            <a href="produk.html">Lihat Menu</a>
+                            <a href="produk.php">Lihat Menu</a>
                         </button>
                     </div>
                 </div>
@@ -175,8 +177,8 @@
             <h2>SiteMap</h2>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="produk.html">Produk</a></li>
-                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="produk.php">Produk</a></li>
+                <li><a href="contact.php">Kontak</a></li>
             </ul>
         </div>
 
@@ -238,6 +240,38 @@
         });
     </script>
 
+    <div class="modal fade" id="logoutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+
+            <div style="background-color: #0e0101; border: none;" class="modal-header">
+                <h5 style="color: white"class="modal-title">Konfirmasi Logout</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div style="background-color: #0e0101; color: white;" class="modal-body">
+                Apakah Anda yakin ingin keluar?
+            </div>
+
+            <div style="background-color: #0e0101; border: none;"  class="modal-footer">
+                <button
+    type="button"
+    class="btn btn-secondary"
+    data-bs-dismiss="modal"
+    onmouseover="this.style.backgroundColor='#ffca2c'; this.style.color='black';"
+    onmouseout="this.style.backgroundColor=''; this.style.color='';">
+    Batal
+</button>
+
+                <a href="logout.php" class="btn btn-warning">
+                    Logout
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

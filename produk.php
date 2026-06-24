@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,9 +27,16 @@
 
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="produk.html">Product</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="produk.php">Product</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li>
+                    <?php if(isset($_SESSION['id'])): ?>
+                        <a href="logout.php"
+                            onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+                    <?php else: ?>
+                        <a href="login.php">Login</a>
+                    <?php endif; ?>
+                </li>
 
             </ul>
 
@@ -40,9 +51,16 @@
 
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="produk.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.php">Logout</a></li>
+            <li><a href="produk.php">Product</a></li>
+            <li><a href="contact.php">Contact</a></li>
+             <li>
+                    <?php if(isset($_SESSION['id'])): ?>
+                        <a href="logout.php"
+                            onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+                    <?php else: ?>
+                        <a href="login.php">Login</a>
+                    <?php endif; ?>
+                </li>
 
         </ul>
 
